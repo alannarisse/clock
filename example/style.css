@@ -12,11 +12,11 @@ body {
 .number {
   font-size: 60px;
   font-weight:bold;
+  position: absolute;
 }
-.minute {}
-.hour {}
 
 main {
+  position:relative;
   width:50%;
   /* this makes the contents hve an 80px margin on top and bottom, and an auto margin on left and right which centers the content. */
   margin: 20px auto;
@@ -24,6 +24,16 @@ main {
 }
 .clock {
   width:100%;
+}
+.hour {
+  position: absolute;
+  top:48%;
+  left:48%;
+}
+.minute { 
+  position: absolute;
+  top:48%;
+  left:48%;
 }
 
 .minute img {
@@ -34,9 +44,15 @@ main {
   width:200px;
   height:20px;
 }
-.one {}
+.one {
+  top: 4%;
+  right: 30%;
+}
 .two {}
-.three {}
+.three {
+  top: 28%;
+  right: 7%;
+}
 .four {}
 .five {}
 .six {}
@@ -46,5 +62,3 @@ main {
 .ten {}
 .eleven {}
 .twelve {}
-.hour {}
-.minute {}
