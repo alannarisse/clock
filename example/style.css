@@ -10,9 +10,58 @@ body {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 .number {
-  font-size: 60px;
   font-weight:bold;
-  position: absolute;
+  font-size:60px;
+  position:absolute;
+
+}
+
+.minute {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  border:1px solid black;
+  height:50%;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: top;
+  transform:rotate(0deg);
+  animation-name: rotate;
+}
+.minute:hover{
+  
+}
+
+@keyframes rotate {
+  0% { transform:rotate(0deg); }
+  100% {transform:rotate(360deg); }
+}
+
+.hour {
+  position:absolute;
+  top: 48%;
+  left: 48%;
+  border:1px solid black;
+  width:50%;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: left;
+  transform:rotate(0deg);
+  animation-name: rotate; 
+}
+
+.hour img {
+  width:50%;
+  height:20px;
+  text-align:center;
+}
+
+.minute img {
+  width:20px;
+  height:81%;
+  text-align:center;
 }
 
 main {
@@ -20,45 +69,66 @@ main {
   width:50%;
   /* this makes the contents hve an 80px margin on top and bottom, and an auto margin on left and right which centers the content. */
   margin: 20px auto;
-
+  border:1px solid black;
 }
 .clock {
   width:100%;
-}
-.hour {
-  position: absolute;
-  top:48%;
-  left:48%;
-}
-.minute { 
-  position: absolute;
-  top:48%;
-  left:48%;
+  
 }
 
-.minute img {
-  width:20px;
-  height:300px;
-}
-.hour img {
-  width:200px;
-  height:20px;
-}
+
 .one {
-  top: 4%;
-  right: 30%;
+  top:10%;
+  right:26%;
 }
-.two {}
+.two {
+  top:26%;
+  right:10%;
+}
 .three {
-  top: 28%;
-  right: 7%;
+  top: 45%;
+  right: 4%;
 }
-.four {}
-.five {}
-.six {}
+.four {
+  bottom: 26%;
+  right: 10%;
+}
+.five {
+  bottom:10%;
+  right:26%;
+}
+.six {
+  bottom: 4%;
+  left: 47%;
+}
 .seven {}
 .eight {}
-.nine {}
+.nine {
+  top: 45%;
+  left: 4%;
+}
 .ten {}
 .eleven {}
-.twelve {}
+.twelve {
+  top:4%;
+  left:47%;
+}
+
+
+
+.ad {
+  
+  background-color:rgb(85, 134, 134);
+  padding:20px;
+  margin:auto;
+  margin-top:220px;
+  width:60%;
+  border:20px solid black;
+  position:relative;
+}
+.star {
+  position:absolute;
+  right: -200px;
+  top:-200px;
+  border:1px solid red;
+}
