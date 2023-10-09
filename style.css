@@ -1,0 +1,32 @@
+* {box-sizing: border-box;}
+
+img {
+  width:100%;
+}
+
+body {
+  margin:0;
+  background-color:antiquewhite;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.number {
+  font-size: 60px;
+  font-weight:bold;
+}
+main {
+  width:50%;
+  /* this makes the contents hve an 80px margin on top and bottom, and an auto margin on left and right which centers the content. */
+  margin: 20px auto;
+
+}
+.clock {
+  width:100%;
+}
+.minute img {
+  width:20px;
+  height:70%;
+}
+.hour img {
+  width:40%;
+  height:20px;
+}
