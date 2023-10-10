@@ -1,5 +1,9 @@
 * {box-sizing: border-box;}
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   width:100%;
 }
@@ -10,58 +14,45 @@ body {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 .number {
-  font-weight:bold;
-  font-size:60px;
   position:absolute;
-
+  font-size: 60px;
+  font-weight:bold;
 }
-
 .minute {
   position:absolute;
-  top: 50%;
-  left: 50%;
-  border:1px solid black;
+  top:48%;
+  left:48%;
   height:50%;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  transform-origin: top;
-  transform:rotate(0deg);
   animation-name: rotate;
+  animation-duration: 6s;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite;
+  transform-origin:top;
 }
-.minute:hover{
-  
-}
-
-@keyframes rotate {
-  0% { transform:rotate(0deg); }
-  100% {transform:rotate(360deg); }
-}
-
 .hour {
   position:absolute;
-  top: 48%;
-  left: 48%;
-  border:1px solid black;
+  top:48%;
+  left:48%;
   width:50%;
-  animation-duration: 12s;
+  animation-name: rotate;
+  animation-duration: 72s;
+  animation-timing-function:linear;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  transform-origin: left;
-  transform:rotate(0deg);
-  animation-name: rotate; 
+  transform-origin:left;
 }
-
-.hour img {
-  width:50%;
-  height:20px;
-  text-align:center;
+@keyframes rotate {
+  0% { transform:rotate(0deg); }
+  100% { transform:rotate(360deg); }
 }
 
 .minute img {
   width:20px;
-  height:81%;
-  text-align:center;
+  height:80%;
+}
+
+.hour img {
+  width:60%;
+  height:20px;
 }
 
 main {
@@ -69,66 +60,59 @@ main {
   width:50%;
   /* this makes the contents hve an 80px margin on top and bottom, and an auto margin on left and right which centers the content. */
   margin: 20px auto;
-  border:1px solid black;
+  margin-bottom:-5px;
+
 }
 .clock {
   width:100%;
-  
 }
 
 
 .one {
-  top:10%;
-  right:26%;
+  top: 12%;
+  right:24%;
 }
 .two {
-  top:26%;
+  top: 27%;
   right:10%;
 }
 .three {
-  top: 45%;
+  top:45%;
   right: 4%;
 }
 .four {
-  bottom: 26%;
+  bottom: 27%;
   right: 10%;
 }
 .five {
-  bottom:10%;
-  right:26%;
+  bottom: 12%;
+  right:25%;
 }
 .six {
   bottom: 4%;
-  left: 47%;
-}
-.seven {}
-.eight {}
-.nine {
-  top: 45%;
-  left: 4%;
-}
-.ten {}
-.eleven {}
-.twelve {
-  top:4%;
   left:47%;
 }
-
-
-
-.ad {
-  
-  background-color:rgb(85, 134, 134);
-  padding:20px;
-  margin:auto;
-  margin-top:220px;
-  width:60%;
-  border:20px solid black;
-  position:relative;
+.seven {
+  bottom: 12%;
+  left:25%;
 }
-.star {
-  position:absolute;
-  right: -200px;
-  top:-200px;
-  border:1px solid red;
+.eight {
+  bottom: 27%;
+  left: 10%;
+}
+.nine {
+  top:45%;
+  left: 4%;
+}
+.ten {
+  top: 27%;
+  left:10%;
+}
+.eleven {
+  top: 12%;
+  left:25%;
+}
+.twelve {
+  top: 4%;
+  left:47%;
 }
